@@ -124,7 +124,7 @@ export default function AppRun($rootScope, $window, $injector, $location, $log, 
             }
         })
 
-        $rootScope.pageTitle = 'Thingsboard';
+        $rootScope.pageTitle = 'Agriot';
 
         $rootScope.stateChangeSuccessHandle = $rootScope.$on('$stateChangeSuccess', function (evt, to, params) {
             if (userService.isPublic() && to.name === 'home.dashboards.dashboard') {
@@ -133,9 +133,9 @@ export default function AppRun($rootScope, $window, $injector, $location, $log, 
             }
             if (angular.isDefined(to.data.pageTitle)) {
                 $translate(to.data.pageTitle).then(function (translation) {
-                    $rootScope.pageTitle = 'Thingsboard | ' + translation;
+                    $rootScope.pageTitle = 'Agriot | ' + translation;
                 }, function (translationId) {
-                    $rootScope.pageTitle = 'Thingsboard | ' + translationId;
+                    $rootScope.pageTitle = 'Agriot | ' + translationId;
                 });
             }
         })
