@@ -18,9 +18,9 @@
 
 cp ../../application/target/thingsboard.deb thingsboard.deb
 
-docker build -t thingsboard/application:1.2.3 -t thingsboard/application:latest .
+docker build -t agriot/application:1.2.3 -t agriot/application:latest .
 
 docker login
 
-docker push thingsboard/application:1.2.3
-docker push thingsboard/application:latest
+docker push agriot/application:1.2.3
+docker push agriot/application:latest
