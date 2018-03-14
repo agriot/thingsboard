@@ -18,9 +18,9 @@ version: '2'
 
 services:
   tb:
-    image: "thingsboard/application:1.4.0"
+    image: "agriot/application:1.4.0"
     ports:
-      - "8080:8080"
+      - "80:8080"
       - "1883:1883"
       - "5683:5683/udp"
     env_file:

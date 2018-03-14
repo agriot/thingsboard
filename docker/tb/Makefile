@@ -1,5 +1,5 @@
 VERSION=1.4.0
-PROJECT=thingsboard
+PROJECT=agriot
 APP=application
 
 build:
